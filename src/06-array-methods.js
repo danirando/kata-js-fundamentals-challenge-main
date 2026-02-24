@@ -2,15 +2,17 @@
 
 // 1. Use map to create a new array with the numbers doubled
 function doubleNumbers(arr) {
-  // write your solution here
+  const double = arr.map((e) => e * 2);
+  return double;
 }
 
 // 2. Use filter to return only even numbers
 function filterEven(arr) {
-  // write your solution here
+  const filter = arr.filter((e) => e % 2 == 0);
+  return filter;
 }
 
 module.exports = {
   doubleNumbers,
-  filterEven
+  filterEven,
 };
