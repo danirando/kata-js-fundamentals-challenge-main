@@ -27,8 +27,6 @@ for (let i = 3; i >= 0; i--) {
   countdown.push(i);
 }
 
-console.log(countdown);
-
 // do not change below this line
 module.exports = {
   a: numsZeroToThree,

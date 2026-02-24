@@ -23,7 +23,7 @@ function incrementByOne(a) {
 // TODO: write code below
 
 function capitalises(word) {
-  return word[0].toUpperCase() + word.slice(1)
+  return word[0].toUpperCase() + word.slice(1);
 }
 
 // 3. Define a function that takes any person's name and returns it with a smiley :)!
@@ -38,7 +38,7 @@ function capitalises(word) {
 // TODO: write code below
 
 function smiley(name) {
-  return "Hi, " + capitalises(name) + " :)"
+  return "Hi, " + capitalises(name) + " :)";
 }
 
 // 4. Define a function that takes an array of data and returns how many strings are in the array.
@@ -53,15 +53,12 @@ function smiley(name) {
 //
 // TODO: write code below
 
-function howMany (array, i) {
-  let count = 0
-  let soloStringhe = array.filter(element => typeof element === "string");
+function howMany(array, i) {
+  let count = 0;
+  let soloStringhe = array.filter((element) => typeof element === "string");
   count += soloStringhe.length;
-  return count
+  return count;
 }
-
-console.log(howMany([1, "ciao"]));
-
 
 // 5. Define a function that takes an object and adds a property 'edward' to the object if it doesn't yet exist with a default value of 'amazing'
 //
@@ -76,11 +73,10 @@ console.log(howMany([1, "ciao"]));
 
 function amazing(object) {
   if (!object.edward) {
-    object.edward = "amazing"
+    object.edward = "amazing";
   }
-  return object
+  return object;
 }
-
 
 // TODO: change each undefined below to be the name of the functions you defined
 module.exports = {
@@ -88,5 +84,5 @@ module.exports = {
   b: capitalises, // 2. change undefined to be the name of the function you defined for the second TODO)
   c: smiley, // etc
   d: howMany,
-  e: amazing
-}
+  e: amazing,
+};
